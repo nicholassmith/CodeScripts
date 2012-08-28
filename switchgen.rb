@@ -9,7 +9,7 @@ switch_cases = gets.split(' ')
 
 puts "switch (#{switch_key}) \n{"
 
-switch_cases.each do |c|
+switch_cases.uniq.each do |c|
 	puts "\tcase #{c}:"
 	puts "\t\t break;" 
 end
